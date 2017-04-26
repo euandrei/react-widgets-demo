@@ -1,0 +1,63 @@
+.trello-boards-wrapper {
+    @import './trello/task.less';
+    @import './trello/welcome.less';
+    #select_projects {
+        width: 100%;
+        margin-top: 5px;
+        height: 25px;
+    }
+    .tasks-row {
+        position: relative;
+    }
+    .group:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    .container {
+        max-width: 550px;
+        margin: 0 auto;
+        position: relative;
+        border: 1px solid lightgrey;
+        padding: 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        .row {
+            //I Like to live dangerously 8-) 
+            margin-left: -5px;
+            margin-right: -5px;
+            &>div {
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+        }
+    }
+    .modalView {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: white;
+    }
+    .modalContainer {
+        padding: 10px;
+        word-wrap: break-word;
+    }
+    .no-border {
+        border: none;
+    }
+    .z-index-4 {
+        position: relative;
+        z-index: 4;
+    }
+    #overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: white;
+        display: block;
+        z-index: 2;
+        opacity: 0.8;
+    }
+}
